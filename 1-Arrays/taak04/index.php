@@ -19,7 +19,6 @@ $speelgoed = [
     ],
 ];
 
-
 $games = [
     'sport' => [
         'naam' => 'Fifa',
@@ -37,3 +36,18 @@ $games = [
         'prijs' => '40.00'
     ]
 ];
+
+for ($x = 0; $x <=2; $x++){
+    echo "Speelgoed " . $speelgoed[$x]['naam'] . " uit de categorie " . $speelgoed[$x]['soort'] . " kost " . $speelgoed[$x]['prijs'] . "<BR>"; 
+}
+
+echo "Speelgoed " . $games['sport']['naam'] . " van de uitgever " . $games['sport']['uitgever'] . " kost " . $games['sport']['prijs'] . "<BR>"; 
+
+echo "Speelgoed " . $games['action']['naam'] . " van de uitgever " . $games['action']['uitgever'] . " kost " . $games['action']['prijs'] . "<BR>";
+
+echo "Speelgoed " . $games['fps']['naam'] . " van de uitgever " . $games['fps']['uitgever'] . " kost " . $games['fps']['prijs'] . "<BR>"; 
+
+
+
+
+
