@@ -80,48 +80,25 @@
     <!-- Loop door de array $nieuwsberichten en toon de gegevens in de juist HTML-tags  -->
     <?php
 
-        // echo "<h2>Amsterdam</h2>";
-        // echo $nieuwsberichten['Onderwijs'][0]['titel'];
-
-        // foreach($provincies as $provincie ){
-        //     echo '<h2>' . $provincie['provincie']. '</h2>';
-        //     echo '<ul>';
-        //     echo '<li>hoofdstad: ' . $provincie['hoofdstad']. '</li>';
-        //     echo '<li>bevolking: ' . $provincie['bevolking']. '</li>';
-        //     echo '<li>meeste inwoners: ' . $provincie['inwoners_gemeente']. '</li>';
-        //     echo '</ul>';
-        // }
-
-
         foreach($nieuwsberichten as $key => $categorie){
-            echo $key['Amsterdam'][0]['titel'];
+            echo "<h1>$key</h1> <div class='content'>";
+            echo "<h2 class='title'>" . $categorie[0]['titel'] . "</h2><BR>";
+            $image = $categorie[0]['image'];
+            echo "<img src='$image' class='title'><BR>";
+            echo $key . " " . $categorie[0]['beschrijving'] . "<BR>";
+
+            echo "<h2 class='title'>" . $categorie[1]['titel'] . "</h2><BR>";
+            $image = $categorie[1]['image'];
+            echo "<img src='$image' class='title'><BR>";
+            echo $key . " " . $categorie[1]['beschrijving'] . "<BR>";
+            echo "</div>";
+
         }
 
-    ?>
+        
+       ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h1></h1>
-    <div class="content">
-        <h2 class="title"></h2>
-        <p class="title"></p>
-        <img src="" class="title">
-
-    </div>
+  
 
 
 </body>
