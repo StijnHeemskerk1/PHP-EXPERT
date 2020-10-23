@@ -1,6 +1,8 @@
 <?php
 
     $database_connectie = new PDO("mysql:host=localhost;dbname=toolsforever", "root", ""); //Connect dit aan de database
+    
+    // public PDO::query("SELECT * FROM locations");
 
     $sql = "SELECT * FROM locations"; //De mysql command in een variable
     $statement = $database_connectie->prepare($sql); //Linked de command aan de connected database en zet dit in een variable
@@ -12,11 +14,6 @@
         echo $gebruiker['name'] . "<br>";
         echo $gebruiker['address'] . "<br>";
         echo $gebruiker['city'] . "<br>";
-
     }
-
-
-
-
 
 ?>
