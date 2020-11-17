@@ -1,6 +1,6 @@
 <?php
     $database_connectie = new PDO("mysql:host=localhost;dbname=toolsforever", "root", "");
-    $sql = "SELECT * FROM locations WHERE city = 'Groningen'";
+    $sql = "SELECT * FROM *;
     
     $statement = $database_connectie->prepare($sql);
     $statement->execute();
